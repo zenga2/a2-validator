@@ -76,6 +76,10 @@ npm i -S a2-validator
         rules: ['required', 'email'],
         tips: ['邮箱不能为空', '请输入正确的邮箱']
       },
+      idCard: {
+        rules: ['required', 'idCard'],
+        tips: ['身份证ID不能为空', '请输入正确的身份证ID']
+      },
       // 自定义的正则验证器
       regStr: {
         rules: ['required', /^a\w+z$/],
