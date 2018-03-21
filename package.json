@@ -1,0 +1,47 @@
+{
+  "name": "a2-validator",
+  "version": "1.0.3",
+  "description": "Vue validator",
+  "main": "dist/a2-validator.js",
+  "module": "dist/a2-validator.esm.js",
+  "author": {
+    "name": "zengjun",
+    "email": "zenga2@foxmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node test/build/dev-server.js",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "keywords": [
+    "validator",
+    "vue",
+    "javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zenga2/better-scroll.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "rollup": "^0.43.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "uglify-js": "^3.3.15"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "android >= 4.2"
+  ]
+}
