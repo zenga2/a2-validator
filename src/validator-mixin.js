@@ -26,7 +26,7 @@ export default {
 function initWatchListener() {
   each(this.$options.validators, (configItem, prop) => {
     let [rules, tips] = getType(configItem) === 'object'
-      ? [configItem.rules, configItem.tips]
+      ? [configItem.rules, configItem.tips || []]
       : [configItem, []]
 
     // add listener
