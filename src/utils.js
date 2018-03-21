@@ -58,8 +58,6 @@ function injectProp(dataProp, injectObj, vm) {
 }
 
 function check(validators, arr) {
-  if (!validators || !arr) return
-
   let errorProp
   let flag = arr.every(prop => {
     errorProp = prop
@@ -79,8 +77,6 @@ function check(validators, arr) {
 }
 
 function checkAll(validators) {
-  if (!validators) return
-
   return check(validators, Object.keys(validators))
 }
 
