@@ -1,22 +1,22 @@
 # a2-validator
 
 ### 首先，引入依赖
-```javascript
+```bash
 npm i -S a2-validator       
 ```
 
 ### example
 ```vue
 <template>
-  <div class="test full-screen">
-    <label>姓名</label><input v-model="name"/>  <br/>
-    <label>年龄</label><input v-model="age"/>   <br/>
-    <label>日期</label><input v-model="date"/>  <br/>
-    <label>邮箱</label><input v-model="email"/> <br/>
-    <label>身份证</label><input v-model="idCard"/><br/>
-    <label>自定义正则</label><input v-model="regStr"/><br/>
-    <label>自定义函数</label><input v-model="funcStr"/><br/>
-    <div v-for="(item, prop) in validators" class="item">
+  <div>
+    <label>姓名</label><input type="text" v-model="name"/>  <br/>
+    <label>年龄</label><input type="text" v-model="age"/>   <br/>
+    <label>日期</label><input type="text" v-model="date"/>  <br/>
+    <label>邮箱</label><input type="text" v-model="email"/> <br/>
+    <label>身份证</label><input type="text" v-model="idCard"/><br/>
+    <label>自定义正则</label><input type="text" v-model="regStr"/><br/>
+    <label>自定义函数</label><input type="text" v-model="funcStr"/><br/>
+    <div v-for="(item, prop) in validators">
       <span>{{prop}}</span>
       <span>{{item.isOk}}</span>
       <span>{{item.step}}</span>
@@ -80,7 +80,7 @@ npm i -S a2-validator
       regStr: {
         rules: ['required', /^a\w+z$/],
         tips: ['内容不能为空', '字符串必须以a开头，同时以z结尾']
-      }
+      },
       // 自定义的函数验证器
       funcStr:{
         rules:['required', value => /^a\w+z$/.test(value)],
@@ -114,4 +114,5 @@ npm i -S a2-validator
       }
     }
  }
+ </script>
 ```
