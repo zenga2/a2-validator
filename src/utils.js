@@ -57,9 +57,10 @@ function injectProp(dataProp, injectObj, vm) {
   }
 }
 
-function check(arr, validators) {
-  let errorProp
+function check(validators, arr) {
+  if (!validators || !arr) return
 
+  let errorProp
   let flag = arr.every(prop => {
     errorProp = prop
     return validators[prop].isOk
@@ -78,7 +79,9 @@ function check(arr, validators) {
 }
 
 function checkAll(validators) {
-  return check(Object.keys(validators), validators)
+  if (!validators) return
+
+  return check(validators, Object.keys(validators))
 }
 
 function mixinUtils(obj) {
