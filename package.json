@@ -1,6 +1,6 @@
 {
   "name": "a2-validator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Vue validator",
   "main": "dist/a2-validator.js",
   "module": "dist/a2-validator.esm.js",
