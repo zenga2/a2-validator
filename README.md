@@ -1,7 +1,5 @@
 # a2-validator
 
-## 查看DEMO
-
 首先，引入依赖
 ```
 npm i -S a2-validator
