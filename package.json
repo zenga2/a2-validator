@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:zenga2/better-scroll.git"
+    "url": "git@github.com:zenga2/a2-validator.git"
   },
   "dependencies": {},
   "devDependencies": {
