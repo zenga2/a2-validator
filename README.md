@@ -1,11 +1,11 @@
 # a2-validator
 
-首先，引入依赖
+### 首先，引入依赖
 ```
 npm i -S a2-validator
 ```
 
-###example
+### example
 ```vue
 <template>
   <div class="test full-screen">
