@@ -1,8 +1,8 @@
 # a2-validator
 
 ### 首先，引入依赖
-```
-npm i -S a2-validator
+```javascript
+npm i -S a2-validator       
 ```
 
 ### example
