@@ -69,7 +69,7 @@ npm i -S a2-validator
         tips:['年龄不能为空', '请输入正确的年龄值','请输入正确的年龄值']
       },
       date: {
-        rules: ['required', 'yyyy-MM-dd'],
+        rules: ['required', 'date|yyyy-MM-dd'],
         tips: ['日期不能为空', '请输入正确的日期，格式如2018-02-09']
       },
       email: {
