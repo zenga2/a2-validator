@@ -1,5 +1,5 @@
 /*!
- * a2-validator v1.0.12
+ * a2-validator v1.1.0
  * (c) 2017-2018 A2
  * Released under the MIT License.
  */
